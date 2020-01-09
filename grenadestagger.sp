@@ -75,7 +75,8 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 }
 
 public void OnPluginStart() {
-  g_hConVars[ConVar_GrenadeLauncherDamage] = CreateConVar("nyx_grenade_launcher_damage", "400.0", "Amount of damage the grenade gauncher does.");
+  g_hConVars[ConVar_GrenadeLauncherDamage] = CreateConVar("nyx_grenade_launcher_damage", "400.0",
+      "Amount of damage the grenade launcher does.");
 
   StartPrepSDKCall(SDKCall_Player);
   PrepSDKCall_SetSignature(SDKLibrary_Server, "@_ZN13CTerrorPlayer19ScriptStaggerPlayerE6Vector", 0);

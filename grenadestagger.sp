@@ -87,8 +87,8 @@ public void OnPluginStart() {
 
 public void OnEntityCreated(int entity, const char[] classname) {
   if (strcmp(classname, "grenade_launcher_projectile", false) == 0) {
-		SDKHook(entity, SDKHook_StartTouch, OnProjectileStartTouch);
-	}
+    SDKHook(entity, SDKHook_StartTouch, OnProjectileStartTouch);
+  }
 }
 
 public Action OnProjectileStartTouch(int entity, int other) {
